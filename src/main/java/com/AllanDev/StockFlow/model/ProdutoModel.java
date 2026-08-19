@@ -13,6 +13,10 @@ public class ProdutoModel {
     private String nome;
     private double preco;
     private int quantidade;
+    //    @ManyToOne  Muitos para Um
+    @ManyToOne
+    @JoinColumn(name = "categoria_id")
+    private CategoriaModel categoria;
 
     public ProdutoModel() {
     }
