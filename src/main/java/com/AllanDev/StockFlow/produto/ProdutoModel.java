@@ -1,5 +1,6 @@
-package com.AllanDev.StockFlow.model;
+package com.AllanDev.StockFlow.produto;
 
+import com.AllanDev.StockFlow.categoria.CategoriaModel;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

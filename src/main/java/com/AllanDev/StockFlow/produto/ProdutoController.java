@@ -1,4 +1,4 @@
-package com.AllanDev.StockFlow.controller;
+package com.AllanDev.StockFlow.produto;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
