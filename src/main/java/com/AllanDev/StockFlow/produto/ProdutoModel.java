@@ -23,6 +23,9 @@ public class ProdutoModel {
     private String nome;
     private double preco;
     private int quantidade;
+    @Column(name = "img_url")
+    private String imgUrl;
+
     //    @ManyToOne  Muitos para Um
     @ManyToOne
     @JoinColumn(name = "categoria_id")
