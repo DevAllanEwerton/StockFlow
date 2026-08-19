@@ -1,11 +1,17 @@
 package com.AllanDev.StockFlow.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Entity
 @Table(name = "tb_categoria")
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class CategoriaModel {
 
     @Id
