@@ -3,7 +3,7 @@ package com.AllanDev.StockFlow.produto;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping
+@RequestMapping("/produto")
 public class ProdutoController {
     @GetMapping
     public String test() {
@@ -17,13 +17,13 @@ public class ProdutoController {
     }
 
     //    mostra produto por ID
-    @GetMapping("/produtoID")
+    @GetMapping("/ID")
     public String procuraProdutoID() {
         return "procuraProdutoID";
     }
 
     //    Mostra todos os produtos
-    @GetMapping("/produtos")
+    @GetMapping("/lista")
     public String listarProduto() {
         return "listarProduto";
     }
