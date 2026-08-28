@@ -17,6 +17,7 @@ public class CategoriaController {
     }
 
     //    mostra Categoria por ID
+
     @GetMapping("/ID")
     public String procuraCategoriaID() {
         return "procuraCategoriaID";
