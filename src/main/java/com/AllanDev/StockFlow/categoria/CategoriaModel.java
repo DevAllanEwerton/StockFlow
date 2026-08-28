@@ -1,6 +1,7 @@
 package com.AllanDev.StockFlow.categoria;
 
 import com.AllanDev.StockFlow.produto.ProdutoModel;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -23,5 +24,6 @@ public class CategoriaModel {
     //    @OneToMany Um para Muitos
 //    o mappedBy aponta para o atributo que controla o relacionamento do outro lado
     @OneToMany(mappedBy = "categoria")
+    @JsonIgnore
     private List<ProdutoModel> produto;
 }
